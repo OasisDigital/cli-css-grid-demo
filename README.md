@@ -1,27 +1,25 @@
-# CliCssGridDemo
+# Angular CLI - CSS Grid Demo
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.6.1.
+## Thesis
 
-## Development server
+Today, early December 2017, is the time to begin using CSS grid for layout in
+Angular applications, even if they must support Internet Explorer. We can stop
+enduring the costs and delays of legacy CSS layout misery, and get better
+results with less work, using CSS Grid.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+See this simple example online:
 
-## Code scaffolding
+https://oasisdigital.github.io/cli-css-grid-demo/
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+It works on both modern browsers and IE11 (maybe 10).
 
-## Build
+## Background
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `-prod` flag for a production build.
+This simple demo is hopefully a bit more interesting than it first appears. It
+uses CSS grid layout, plus various workarounds for support in Internet Explorer
+11 and Angular CLI 1.6.1, which does not yet have the needed versions and
+settings to make things easy.
 
-## Running unit tests
+Explanatory blog post:
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+https://blog.oasisdigital.com/2017/css-grid-angular-cli-now/

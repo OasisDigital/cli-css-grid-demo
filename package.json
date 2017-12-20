@@ -3,11 +3,15 @@
   "version": "0.0.0",
   "license": "MIT",
   "scripts": {
+    "postinstall": "./patch_cli_autoprefixer.sh",
     "ng": "ng",
     "start": "ng serve",
     "build": "ng build --prod",
     "test": "ng test",
     "lint": "ng lint",
+    "build-demo": "ng build --prod --base-href /cli-css-grid-demo/",
+    "gh-pages": "gh-pages -d dist",
+    "deploy-demo": "run-s build-demo gh-pages",
     "e2e": "ng e2e"
   },
   "private": true,
@@ -33,6 +37,7 @@
     "@types/jasminewd2": "~2.0.2",
     "@types/node": "~6.0.60",
     "codelyzer": "^4.0.1",
+    "gh-pages": "^1.1.0",
     "jasmine-core": "~2.6.2",
     "jasmine-spec-reporter": "~4.1.0",
     "karma": "~1.7.0",
@@ -41,9 +46,13 @@
     "karma-coverage-istanbul-reporter": "^1.2.1",
     "karma-jasmine": "~1.1.0",
     "karma-jasmine-html-reporter": "^0.2.2",
+    "npm-run-all": "^4.1.2",
     "protractor": "~5.1.2",
     "ts-node": "~3.2.0",
     "tslint": "~5.7.0",
     "typescript": "~2.4.2"
+  },
+  "resolutions": {
+    "autoprefixer": "^7.2.3"
   }
 }
